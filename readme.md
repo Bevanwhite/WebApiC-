@@ -1,0 +1,1 @@
+-   to create a webapi project - `dotnet new webapi -n CompanyEmployees -f net6.0`
