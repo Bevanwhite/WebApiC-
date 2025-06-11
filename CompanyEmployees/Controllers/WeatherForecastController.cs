@@ -1,3 +1,4 @@
+using LoggerService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers;
@@ -6,27 +7,22 @@ namespace CompanyEmployees.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
 
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILoggerManager _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILoggerManager logger)
     {
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    [HttpGet]
+    public IEnumerable<string> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        _logger.LogInfo("INFO here is info message from our values controller");
+        _logger.LogDebug("DEBUG here is debug message from our values controller");
+        _logger.LogWarn("WARN here is warn message from our values controller");
+        _logger.LogError("ERROR here is error message from our values controller");
+
+        return new string[] { "value1", "value2" };
     }
 }
