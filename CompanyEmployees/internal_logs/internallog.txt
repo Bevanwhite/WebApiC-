@@ -856,3 +856,33 @@
 2025-06-11 14:30:39.0748 Trace Opening C:\Users\CommercePromote\Documents\beva\csharpAPI\CompanyEmployees\bin\Debug\net6.0\.\logs\2025-06-11_logfile.txt with allowFileSharedWriting=False
 2025-06-11 14:30:39.0748 Trace Opening C:\Users\CommercePromote\Documents\beva\csharpAPI\CompanyEmployees\bin\Debug\net6.0\.\logs\2025-06-11_logfile.txt with allowFileSharedWriting=False
 2025-06-11 14:30:39.0748 Trace Opening C:\Users\CommercePromote\Documents\beva\csharpAPI\CompanyEmployees\bin\Debug\net6.0\.\logs\2025-06-11_logfile.txt with allowFileSharedWriting=False
+2025-06-11 14:45:14.6349 Info AppDomain Shutting down. Logger closing...
+2025-06-11 14:45:14.6349 Debug Stopping file watching for path 'C:\Users\CommercePromote\Documents\beva\csharpAPI\CompanyEmployees' filter 'nlog.config'
+2025-06-11 14:45:14.6349 Trace Flushing all 1 targets...
+2025-06-11 14:45:14.6349 Trace ForEachItemInParallel() 1 items
+2025-06-11 14:45:14.6349 Trace FileTarget(Name=logfile): FlushAsync
+2025-06-11 14:45:14.6349 Trace Continuation invoked: 
+2025-06-11 14:45:14.6493 Trace Parallel task completed. 0 items remaining
+2025-06-11 14:45:14.6493 Debug Flush completed
+2025-06-11 14:45:14.6493 Trace FileTarget(Name=logfile): FlushAsync Done
+2025-06-11 14:45:14.6493 Debug Targets not configured for logger: LoggerService.LoggerManager
+2025-06-11 14:45:14.6493 Debug Closing logging configuration...
+2025-06-11 14:45:14.6493 Trace Closing File Target[logfile]
+2025-06-11 14:45:14.6493 Debug Closing target 'File Target[logfile]'.
+2025-06-11 14:45:14.6493 Trace FileTarget(Name=logfile): FinalizeFile 'C:\Users\CommercePromote\Documents\beva\csharpAPI\CompanyEmployees\bin\Debug\net6.0\.\logs\2025-06-11_logfile.txt, isArchiving: False'
+2025-06-11 14:45:14.6493 Debug FileAppender Closing Invalidate - C:\Users\CommercePromote\Documents\beva\csharpAPI\CompanyEmployees\bin\Debug\net6.0\.\logs\2025-06-11_logfile.txt
+2025-06-11 14:45:14.6493 Debug Closed target 'File Target[logfile]'.
+2025-06-11 14:45:14.6493 Trace Closing '.\logs\${shortdate}_logfile.txt'
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${literal}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${shortdate}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${literal}
+2025-06-11 14:45:14.6493 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${longdate}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${literal}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${uppercase}
+2025-06-11 14:45:14.6493 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${level}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${literal}
+2025-06-11 14:45:14.6493 Trace Closing Layout Renderer: ${message}
+2025-06-11 14:45:14.6493 Debug Finished closing logging configuration.
+2025-06-11 14:45:14.6493 Info Logger has been shut down.
