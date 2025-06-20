@@ -13,3 +13,9 @@
 -   how to add a dotnet package
     -   `dotnet add package NLog.Extensions.Logging --version 1.7.4`
     -   `dotnet add ./MyApp/MyApp.csproj package NLog.Extensions.Logging --version 1.7.4`
+-   how to add a migration
+    -   `dotnet ef migrations add DatabaseCreation`
+    -   `dotnet ef migrations add DatabaseCreation --project MyApp.Data --startup-project MyApp.Web`
+-   how to update the database
+    -   `dotnet ef database update`
+    -   `dotnet ef database update --project MyApp.Data --startup-project MyApp.Web`
